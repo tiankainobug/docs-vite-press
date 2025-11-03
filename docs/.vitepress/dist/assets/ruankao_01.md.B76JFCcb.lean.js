@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as t,ae as i}from"./chunks/framework.Dgg8-8ov.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"ruankao/01.md","filePath":"ruankao/01.md"}'),r={name:"ruankao/01.md"};function n(p,a,l,c,d,s){return t(),o("div",null,a[0]||(a[0]=[i("",23)]))}const u=e(r,[["render",n]]);export{m as __pageData,u as default};
