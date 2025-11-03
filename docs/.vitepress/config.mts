@@ -22,6 +22,12 @@ export default defineConfig({
                     {text: '交互逻辑', link: '/mediaSoup/jiaohu'},
                     {text: 'demo', link: '/mediaSoup/mediasoup-demo'},
                 ]
+            },
+            {
+                text: 'vue3源码',
+                items: [
+                    {text: '笔记', link: '/vue3/01.笔记.md'},
+                ]
             }
         ],
 
@@ -41,6 +47,14 @@ export default defineConfig({
                     items: [
                         {text: '交互逻辑', link: '/mediaSoup/jiaohu'},
                         {text: 'demo', link: '/mediaSoup/mediasoup-demo'},
+                    ]
+                }
+            ],
+            '/vue3/': [
+                {
+                    text: 'vue3源码',
+                    items: [
+                        {text: '笔记', link: '/vue3/01.笔记.md'},
                     ]
                 }
             ]
