@@ -68,5 +68,6 @@ export default defineConfig({
             message: 'MIT Licensed | Copyright © 2021 - 2022',
             copyright: '鲁ICP备2024124919号'
         }
-    }
+    },
+    base: "/docs-vite-press/",
 })
