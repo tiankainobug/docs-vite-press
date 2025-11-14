@@ -21,7 +21,7 @@ function getMarkdownFiles(srcPath) {
 
 /** 生成 nav 和 sidebar */
 function generateConfig() {
-    const nav = []
+    let nav = []
     const sidebar = {}
 
     const topDirs = getDirectories(docsRoot)
@@ -54,14 +54,24 @@ function generateConfig() {
         sidebar[`/${dir}/`] = sidebarItems
 
         // nav: 指向该目录下第一个子目录的第一个文件
-        const firstSubDir = subDirs[0]
-        if (firstSubDir) {
-            const firstFile = getMarkdownFiles(path.join(dirPath, firstSubDir))[0]
-            if (firstFile) {
-                const firstLink = `/${dir}/${firstSubDir}/${firstFile.replace(/\.md$/, '')}`
-                nav.push({ text: dir, link: firstLink })
+        // const firstSubDir = subDirs[0]
+        // if (firstSubDir) {
+        //     const firstFile = getMarkdownFiles(path.join(dirPath, firstSubDir))[0]
+        //     if (firstFile) {
+        //         const firstLink = `/${dir}/${firstSubDir}/${firstFile.replace(/\.md$/, '')}`
+        //         nav.push({ text: dir, link: firstLink })
+        //     }
+        // }
+        nav = [
+            {
+                "text": "学习笔记",
+                "link": "/学习笔记/01.vue3/01.笔记"
+            },
+            {
+                "text": "代码规范化",
+                "link": "/学习笔记/04.代码规范化/01.prettier"
             }
-        }
+        ]
     }
 
     const content = `
