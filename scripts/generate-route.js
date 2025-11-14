@@ -68,8 +68,8 @@ function generateConfig() {
                 "link": "/学习笔记/01.vue3/01.笔记"
             },
             {
-                "text": "代码规范化",
-                "link": "/学习笔记/04.代码规范化/01.prettier"
+                "text": "代码积累",
+                "link": "/代码积累/01.工具方法/01.脱敏"
             }
         ]
     }
